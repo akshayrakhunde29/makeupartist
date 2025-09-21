@@ -176,7 +176,7 @@ const App = () => {
             <div className="flex items-center justify-between">
               <div className="flex items-center space-x-2">
                 <Palette className="w-8 h-8 text-pink-600" />
-                <span className="text-xl font-bold bg-gradient-to-r from-pink-600 to-purple-600 bg-clip-text text-transparent">
+                <span className="text-sm font-bold bg-gradient-to-r from-pink-600 to-purple-600 bg-clip-text text-transparent">
                   Jayant Makeup Artist
                 </span>
               </div>
