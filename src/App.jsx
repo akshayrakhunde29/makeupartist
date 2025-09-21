@@ -17,6 +17,10 @@ import {
   Award,
   Heart,
 } from "lucide-react";
+import bridal from "./assets/bridal.jpg";
+import Traditional from "./assets/Traditional.jpg";
+import dummy from "./assets/dummy.jpg";
+import makeup from "./assets/makeup.jpg";
 
 const App = () => {
   const [isDark, setIsDark] = useState(false);
@@ -69,8 +73,7 @@ const App = () => {
     {
       id: 1,
       category: "Bridal",
-      image:
-        "https://images.unsplash.com/photo-1594736797933-d0401ba343ab?w=400&h=500&fit=crop&crop=face",
+      image: bridal,
     },
     {
       id: 2,
@@ -99,8 +102,7 @@ const App = () => {
     {
       id: 6,
       category: "Traditional",
-      image:
-        "https://images.unsplash.com/photo-1506629905069-5c2a5e362239?w=400&h=500&fit=crop&crop=face",
+      image: Traditional,
     },
     {
       id: 7,
@@ -145,22 +147,19 @@ const App = () => {
       name: "Priya Sharma",
       rating: 5,
       text: "Jayant transformed me for my wedding day. The makeup was flawless and lasted the entire ceremony!",
-      image:
-        "https://images.unsplash.com/photo-1494790108755-2616b612b5bb?w=100&h=100&fit=crop&crop=face",
+      image: dummy,
     },
     {
       name: "Ananya Gupta",
       rating: 5,
       text: "Professional, talented, and so easy to work with. My party makeup was absolutely stunning!",
-      image:
-        "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&h=100&fit=crop&crop=face",
+      image: dummy,
     },
     {
       name: "Meera Patel",
       rating: 5,
       text: "The airbrush makeup technique is incredible. My skin looked perfect in all the photos!",
-      image:
-        "https://images.unsplash.com/photo-1489424731084-a5d8b219a5bb?w=100&h=100&fit=crop&crop=face",
+      image: dummy,
     },
   ];
 
@@ -297,7 +296,7 @@ const App = () => {
           <div className="container mx-auto px-6">
             <div className="grid lg:grid-cols-2 gap-12 items-center">
               <div className="space-y-8">
-                <div className="space-y-4">
+                <div className="space-y-4 mt-1">
                   <h1 className="text-5xl lg:text-6xl font-bold leading-tight">
                     Professional
                     <span className="block bg-gradient-to-r from-pink-600 to-purple-600 bg-clip-text text-transparent">
@@ -313,22 +312,24 @@ const App = () => {
 
                 <div className="flex flex-wrap gap-4">
                   <button className="bg-gradient-to-r from-pink-600 to-purple-600 text-white px-8 py-3 rounded-full font-semibold hover:shadow-lg transform hover:scale-105 transition-all duration-300">
-                    Book Now
+                    <a href="#contact" className="hover:text-white">
+                      Book Now
+                    </a>
                   </button>
-                  <button className="border-2 border-pink-600 text-pink-600 px-8 py-3 rounded-full font-semibold hover:bg-pink-600 hover:text-white transition-all duration-300">
+                  {/* <button className="border-2 border-pink-600 text-pink-600 px-8 py-3 rounded-full font-semibold hover:bg-pink-600 hover:text-white transition-all duration-300">
                     View Portfolio
-                  </button>
+                  </button> */}
                 </div>
 
                 <div className="grid grid-cols-3 gap-8 pt-8 border-t border-gray-200 dark:border-gray-700">
                   <div className="text-center">
-                    <div className="text-2xl font-bold text-pink-600">500+</div>
+                    <div className="text-2xl font-bold text-pink-600">100+</div>
                     <div className="text-sm text-gray-600 dark:text-gray-400">
                       Happy Clients
                     </div>
                   </div>
                   <div className="text-center">
-                    <div className="text-2xl font-bold text-pink-600">5</div>
+                    <div className="text-2xl font-bold text-pink-600">1+</div>
                     <div className="text-sm text-gray-600 dark:text-gray-400">
                       Years Experience
                     </div>
@@ -345,7 +346,7 @@ const App = () => {
               <div className="relative">
                 <div className="relative w-full h-96 lg:h-[500px] rounded-2xl overflow-hidden">
                   <img
-                    src="https://images.unsplash.com/photo-1594736797933-d0401ba343ab?w=600&h=600&fit=crop"
+                    src={makeup}
                     alt="Professional Makeup"
                     className="w-full h-full object-cover"
                   />
@@ -381,7 +382,7 @@ const App = () => {
                   Creating Beauty, One Face at a Time
                 </h3>
                 <p className="text-gray-600 dark:text-gray-400">
-                  With over 5 years of professional experience, I specialize in
+                  With over 1+ years of professional experience, I specialize in
                   traditional, modern, and airbrush makeup techniques. My
                   passion lies in enhancing natural beauty and creating looks
                   that make every client feel confident and radiant.
@@ -569,7 +570,7 @@ const App = () => {
                   <div>
                     <h4 className="font-semibold">Website</h4>
                     <p className="text-gray-600 dark:text-gray-400">
-                      www.jayant.rakhunde.com
+                      https://makeupartist-kappa.vercel.app/
                     </p>
                   </div>
                 </div>
@@ -581,7 +582,7 @@ const App = () => {
                   <div>
                     <h4 className="font-semibold">Location</h4>
                     <p className="text-gray-600 dark:text-gray-400">
-                      At. Mangli वार्ड नं ४
+                      At-Mangli Tah-Zari Jamni Dist-Yavatmal 445305
                     </p>
                   </div>
                 </div>
